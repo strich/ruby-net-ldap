@@ -336,7 +336,8 @@ class Net::LDAP
   }
 
   module LdapControls
-    PagedResults = "1.2.840.113556.1.4.319" # Microsoft evil from RFC 2696
+    #PagedResults = "1.2.840.113556.1.4.319" # Microsoft evil from RFC 2696
+    PagedResults = "2.16.840.1.113730.3.4.2" # IBM Bluepages compatible ControlType
   end
 
   def self.result2string(code) #:nodoc:
